@@ -23,5 +23,22 @@ public class AppTest extends FluentTest {
     goTo("http://localhost:4567/");
     assertThat(pageSource()).contains("Make your own dictionary!");
   }
-  
+
+  @Test
+  public void wordIsCreatedTest() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add New Word"));
+    fill("#term").with("Sweater");
+    submit(".btn");
+    assertThat(pageSource()).contains("Sweater");
+  }
+
+  // @Test
+  // public void categoryIsDisplayedTest() {
+  //   goTo("http://localhost:4567/categories/new");
+  //   fill("#name").with("Household chores");
+  //   submit(".btn");
+  //   click("a", withText("View categories"));
+  //   assertThat(pageSource()).contains("Household chores");
+  // }
 }
