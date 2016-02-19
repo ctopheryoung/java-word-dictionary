@@ -20,4 +20,18 @@ public class WordTest {
     assertEquals("Sock", myWord.getTerm());
   }
 
+  @Test
+  public void all_returnsAllInstancesOfWord_true() {
+    Word firstWord = new Word("Sock");
+    Word secondWord = new Word("Kimono");
+    assertTrue(Word.all().contains(firstWord));
+    assertTrue(Word.all().contains(secondWord));
+  }
+
+  @Test
+  public void getId_returnsWordId_true() {
+    Word myWord = new Word("Sock");
+    assertTrue(Word.all().size() == myWord.getId());
+  }
+
 }

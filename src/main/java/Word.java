@@ -20,4 +20,12 @@ public class Word {
     return mTerm;
   }
 
+  public int getId() {
+    return mId;
+  }
+
+  public static ArrayList<Word> all() {
+    return instances;
+  }
+
 }
