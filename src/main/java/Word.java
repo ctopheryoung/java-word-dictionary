@@ -44,4 +44,8 @@ public class Word {
     }
   }
 
+  public void addDefinition(Definition definition) {
+    mDefinitions.add(definition);
+  }
+
 }
