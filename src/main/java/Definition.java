@@ -13,4 +13,12 @@ public class Definition {
     mId = instances.size();
   }
 
+  public String getMeaning() {
+    return mMeaning;
+  }
+
+  public int getId() {
+    return mId;
+  }
+
 }

@@ -8,6 +8,10 @@ public class DefinitionTest {
   @Rule
   public ClearRule clearRule = new ClearRule();
 
-  //Tests go here
+  @Test
+  public void definition_instantiatesCorrectly_true() {
+    Definition testDefinition = new Definition("Sweaters for your feet");
+    assertEquals(true, testDefinition instanceof Definition);
+  }
 
 }
