@@ -14,4 +14,10 @@ public class WordTest {
     assertEquals(true, myWord instanceof Word);
   }
 
+  @Test
+  public void getTerm_returnsTerm_true() {
+    Word myWord = new Word("Sock");
+    assertEquals("Sock", myWord.getTerm());
+  }
+
 }

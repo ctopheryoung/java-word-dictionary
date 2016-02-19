@@ -16,4 +16,8 @@ public class Word {
     mDefinitions = new ArrayList<Definition>();
   }
 
+  public String getTerm() {
+    return mTerm;
+  }
+
 }
