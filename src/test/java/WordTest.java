@@ -8,6 +8,10 @@ public class WordTest {
   @Rule
   public ClearRule clearRule = new ClearRule();
 
-  //Tests go here
+  @Test
+  public void word_instantiatesCorrectly_true() {
+    Word myWord = new Word("Sock");
+    assertEquals(true, myWord instanceof Word);
+  }
 
 }
