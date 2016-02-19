@@ -48,4 +48,16 @@ public class DefinitionTest {
     assertEquals(Definition.find(testDefinitionTwo.getId()), testDefinitionTwo);
   }
 
+  @Test
+  public void clear_removesAllDefinitionInstancesFromMemory() {
+    Definition testDefinition = new Definition("Sweaters for your feet");
+    Definition.clear();
+    assertEquals(Definition.all().size(), 0);
+  }
+
+  // @Test
+  // public void find_returnsNullWhenNoDefinitionFound_null() {
+  //   assertTrue(Definition.find(99) == null);
+  // }
+
 }

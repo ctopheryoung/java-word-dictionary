@@ -33,4 +33,8 @@ public class Definition {
     }
   }
 
+  public static void clear() {
+    instances.clear();
+  }
+
 }
