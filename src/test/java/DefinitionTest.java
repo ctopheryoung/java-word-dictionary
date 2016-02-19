@@ -26,4 +26,12 @@ public class DefinitionTest {
     assertTrue(Definition.all().size() == testDefinition.getId());
   }
 
+  @Test
+  public void all_returnsAllInstancesOfDefinition_true() {
+    Definition testDefinitionOne = new Definition("Sweaters for your feet");
+    Definition testDefinitionTwo = new Definition("A piece of clothing that you wear on your feetsies");
+    assertTrue(Definition.all().contains(testDefinitionOne));
+    assertTrue(Definition.all().contains(testDefinitionTwo));
+  }
+
 }
