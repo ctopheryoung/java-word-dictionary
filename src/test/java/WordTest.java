@@ -29,6 +29,12 @@ public class WordTest {
   }
 
   @Test
+  public void newId_wordsInstantiateWithAnID_true() {
+    Word myWord = new Word("Sock");
+    assertEquals(Word.all().size(), myWord.getId());
+  }
+
+  @Test
   public void getId_returnsWordId_true() {
     Word myWord = new Word("Sock");
     assertTrue(Word.all().size() == myWord.getId());
