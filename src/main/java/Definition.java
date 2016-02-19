@@ -28,7 +28,7 @@ public class Definition {
   public static Definition find(int id) {
     try {
       return instances.get(id-1);
-    } catch (IndexOutOfBoundsException e) {
+    } catch (IndexOutOfBoundsException exception) {
       return null;
     }
   }
