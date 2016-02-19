@@ -60,6 +60,11 @@ public class WordTest {
   }
 
   @Test
+  public void find_returnsNullWhenNoWordFound_null() {
+    assertTrue(Word.find(99) == null);
+  }
+
+  @Test
   public void addDefinition_addsDefinitionToWordObject() {
     Word myWord = new Word("Sweaters");
     Definition myDefinition = new Definition("A very cozy piece of clothing.");
