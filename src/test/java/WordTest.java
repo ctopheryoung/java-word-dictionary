@@ -34,4 +34,10 @@ public class WordTest {
     assertTrue(Word.all().size() == myWord.getId());
   }
 
+  @Test
+  public void getDefinitions_initiallyReturnsEmptyArrayList() {
+    Word myWord = new Word("Sock");
+    assertTrue(myWord.getDefinitions() instanceof ArrayList);
+  }
+
 }

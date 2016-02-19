@@ -28,4 +28,8 @@ public class Word {
     return instances;
   }
 
+  public ArrayList<Definition> getDefinitions() {
+    return mDefinitions;
+  }
+
 }
