@@ -34,4 +34,10 @@ public class DefinitionTest {
     assertTrue(Definition.all().contains(testDefinitionTwo));
   }
 
+  @Test
+  public void newId_definitionsInstantiateWithAnID_true() {
+    Definition testDefinition = new Definition("Sweaters for your feet");
+    assertEquals(Definition.all().size(), testDefinition.getId());
+  }
+
 }
