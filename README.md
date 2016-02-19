@@ -10,7 +10,7 @@ This is a dictionary web application. It allows users to create a dictionary by 
 
 ## How To Use
 
-* Check out my GitHub repository:
+* Check out my GitHub repository: https://github.com/ctopheryoung/java-word-dictionary
 * See the functioning web app hosted on Heroku:
 
 ## Technologies Used
