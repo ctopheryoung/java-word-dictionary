@@ -14,4 +14,10 @@ public class DefinitionTest {
     assertEquals(true, testDefinition instanceof Definition);
   }
 
+  @Test
+  public void getMeaning_returnsMeaning_true() {
+    Definition testDefinition = new Definition("Sweaters for your feet");
+    assertEquals("Sweaters for your feet", testDefinition.getMeaning());
+  }
+
 }
