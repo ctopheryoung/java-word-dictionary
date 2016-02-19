@@ -32,4 +32,8 @@ public class Word {
     return mDefinitions;
   }
 
+  public static void clear() {
+    instances.clear();
+  }
+
 }

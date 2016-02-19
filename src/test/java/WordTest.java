@@ -40,4 +40,11 @@ public class WordTest {
     assertTrue(myWord.getDefinitions() instanceof ArrayList);
   }
 
+  @Test
+  public void clear_removesAllWordInstancesFromMemory() {
+    Word myWord = new Word("Sock");
+    Word.clear();
+    assertEquals(Word.all().size(), 0);
+  }
+
 }
