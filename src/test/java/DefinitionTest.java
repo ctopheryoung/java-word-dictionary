@@ -40,4 +40,12 @@ public class DefinitionTest {
     assertEquals(Definition.all().size(), testDefinition.getId());
   }
 
+  @Test
+  public void find_returnsDefinitionWithSameId_multiple() {
+    Definition testDefinitionOne = new Definition("Sweaters for your feet");
+    Definition testDefinitionTwo = new Definition("A piece of clothing that you wear on your feetsies");
+    assertEquals(Definition.find(testDefinitionOne.getId()), testDefinitionOne);
+    assertEquals(Definition.find(testDefinitionTwo.getId()), testDefinitionTwo);
+  }
+
 }
