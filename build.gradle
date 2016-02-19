@@ -1,8 +1,9 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-archivesBaseName = "kitchen"
+archivesBaseName = "word-dictionary-java"
 version = '1.0'
+applicationName = "word-dictionary-java"
 mainClassName = "App"
 
 repositories {
