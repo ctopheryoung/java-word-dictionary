@@ -33,12 +33,11 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Sweater");
   }
 
-  // @Test
-  // public void categoryIsDisplayedTest() {
-  //   goTo("http://localhost:4567/categories/new");
-  //   fill("#name").with("Household chores");
-  //   submit(".btn");
-  //   click("a", withText("View categories"));
-  //   assertThat(pageSource()).contains("Household chores");
-  // }
+  @Test
+  public void wordIsDisplayedTest() {
+    goTo("http://localhost:4567/words/new");
+    fill("#term").with("Sweater");
+    submit(".btn");
+    assertThat(pageSource()).contains("Sweater");
+  }
 }
