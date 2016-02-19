@@ -21,4 +21,8 @@ public class Definition {
     return mId;
   }
 
+  public static ArrayList<Definition> all() {
+    return instances;
+  }
+
 }

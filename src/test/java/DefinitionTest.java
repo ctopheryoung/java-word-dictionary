@@ -20,4 +20,10 @@ public class DefinitionTest {
     assertEquals("Sweaters for your feet", testDefinition.getMeaning());
   }
 
+  @Test
+  public void getId_returnsDefinitionId_true() {
+    Definition testDefinition = new Definition("Sweaters for your feet");
+    assertTrue(Definition.all().size() == testDefinition.getId());
+  }
+
 }
