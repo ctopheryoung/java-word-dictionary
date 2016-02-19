@@ -24,12 +24,12 @@ public class Word {
     return mId;
   }
 
-  public static ArrayList<Word> all() {
-    return instances;
-  }
-
   public ArrayList<Definition> getDefinitions() {
     return mDefinitions;
+  }
+
+  public static ArrayList<Word> all() {
+    return instances;
   }
 
   public static void clear() {
