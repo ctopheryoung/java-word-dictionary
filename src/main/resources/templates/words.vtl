@@ -2,7 +2,7 @@
 <p>Click a word to view it's definition(s)</p>
 
 #foreach($word in $words)
- <h4><a href="/words/$word.getId()">$word.getTerm()</a></h4>
+  <h4><a href="/words/$word.getId()">$word.getTerm()</a></h4>
 #end
 
 <a class="btn btn-warning" href="/words/new">Add New Word</a>

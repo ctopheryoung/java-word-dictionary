@@ -32,6 +32,7 @@ public class Word {
     return instances;
   }
 
+
   public static void clear() {
     instances.clear();
   }
@@ -47,5 +48,4 @@ public class Word {
   public void addDefinition(Definition definition) {
     mDefinitions.add(definition);
   }
-
 }
