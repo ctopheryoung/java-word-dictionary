@@ -11,7 +11,7 @@ This is a dictionary web application. It allows users to create a dictionary by 
 ## How To Use
 
 * Check out my GitHub repository: https://github.com/ctopheryoung/java-word-dictionary
-* See the functioning web app hosted on Heroku:
+* See the functioning web app hosted on Heroku: https://limitless-stream-69125.herokuapp.com/
 
 ## Technologies Used
 
