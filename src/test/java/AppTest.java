@@ -40,4 +40,26 @@ public class AppTest extends FluentTest {
     submit(".btn");
     assertThat(pageSource()).contains("Sweater");
   }
+
+  @Test
+  public void wordDefinitionsFormIsDisplayed() {
+    goTo("http://localhost:4567/words/new");
+    fill("#term").with("Sweater");
+    submit(".btn");
+    click("a", withText("Sweater"));
+    click("a", withText("Add a Definition"));
+    assertThat(pageSource()).contains("Add a new definition for Sweater:");
+  }
+
+  @Test
+  public void definitionIsAddedAndDisplayed() {
+    goTo("http://localhost:4567/words/new");
+    fill("#term").with("Blanket");
+    submit(".btn");
+    click("a", withText("Blanket"));
+    click("a", withText("Add a Definition"));
+    fill("#meaning").with("Warm thing");
+    submit(".btn");
+    assertThat(pageSource()).contains("Warm thing");
+  }
 }

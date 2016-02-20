@@ -1,0 +1,8 @@
+<h1>Definitions for $word.getTerm():</h1>
+
+#foreach($definition in $word.getDefinitions())
+  <h4>$definition.getMeaning()</h4>
+#end
+
+<a class="btn btn-warning" href="/words/$word.getId()/definitions/new">Add a Definition</a>
+<a class="btn btn-success" href="/words">Return to Main Dictionary</a>
